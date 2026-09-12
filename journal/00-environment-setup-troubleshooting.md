@@ -107,7 +107,7 @@ ssh sysadmin@192.168.56.104
 
 SSH connection succeeded.
 
-![Successful SSH connection](assets/ssh-success.png)
+![Successful SSH connection][(assets/ssh-success.png)]
 
 ## Key Concepts
 

@@ -38,7 +38,7 @@ Setup troubleshooting log: [`journal/00-environment-setup-troubleshooting.md`](j
 | # | Milestone | Status | Doc |
 |---|-----------|--------|-----|
 | 0 | Environment Setup | ✅ | [docs/00-environment-setup.md](docs/00-environment-setup.md) |
-| 1 | First Contact — Filesystem & Navigation | ⬜ | |
+| 1 | First Contact — Filesystem & Navigation | ✅ | [docs/01-first-contact.md](docs/01-first-contact.md)|
 | 2 | Identity & Access — Users, Groups, Permissions | ⬜ | |
 | 3 | The Toolbox — Package Management & Editors | ⬜ | |
 | 4 | Under the Hood — Processes, Jobs, systemd | ⬜ | |
