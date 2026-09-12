@@ -35,7 +35,7 @@ ls -l  /sys   :  files with 0 bytes storage
 After comparison files on /home present actual storage space because they are real files stored on disk. Instead, the files on /proc and /sys don't present actual storage size because they aren't real files stored on disk they are generated live by the kernel from information it already holds in memory (CPU info, running processes hardware state, etc.), related to the system that changes every second. So it's pointless to save this data to disk since it would need constant rewriting and would be outdated the moment it was saved instead the kernel just generates it on demand when read.
 
 ## File Operations
-check : [`journal/01-first-contact.md`](journal/01-first-contact.md)
+check : [`journal/01-first-contact.md`](linux-labs-sysadmin/journal/01-first-contact.md)
 
 # File & Directory Operations — Command Reference
 
@@ -115,7 +115,7 @@ rm -r directory/
 
 `rm -r` removes a directory and its contents.
 
-⚠️ **Always verify the path before using `rm -r`.**
+**Always verify the path before using `rm -r`.**
 
 ## Useful distinction
 
@@ -176,17 +176,17 @@ Find at least one symbolic link (try `/etc` or `/usr/bin`). Note its `l` marker 
 lrwxrwxrwx 1 root root         27 Aug  6 23:26 localtime -> /usr/share/zoneinfo/Etc/UTC
 
 ## Reflection Questions
-Why a unified tree instead of drive letters? 
-- Why a unified tree instead of drive letters? →
+- Why a unified tree instead of drive letters? 
 
 > Linux organizes resources by **where they are mounted in one tree**, not by assigning each storage device a separate drive letter.
 
 This gives a more consistent path structure and makes storage easier to combine/manage.
 
-unified tree : every file, folder, storage drive, and hardware device branches out from one single root directory
-A drive letter is **a single letter from A to Z, usually followed by a colon, that an operating system assigns to a physical or logical storage device**
+**unified tree**: every file, folder, storage drive, and hardware device branches out from one single root directory.
 
-Why /etc vs /var/log as separate concerns?
+**A drive letter** is a single letter from A to Z, usually followed by a colon, that an operating system assigns to a physical or logical storage device**
+
+- Why /etc vs /var/log as separate concerns?
 
 **`/etc` = instructions**
 
@@ -221,7 +221,7 @@ The kernel **generates the content when you read it**.
 
 So `/proc` is called a **pseudo-filesystem** (or virtual filesystem).
 
-Why document a server's baseline before changing it?
+- Why document a server's baseline before changing it?
 
 We document the server's baseline so we know its original state before making changes. If something breaks or behaves differently afterward, we can compare the new state with the baseline, identify what changed, troubleshoot, and restore the original configuration if we have a proper backup.
 
