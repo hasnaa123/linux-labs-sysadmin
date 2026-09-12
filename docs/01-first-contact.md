@@ -35,7 +35,7 @@ ls -l  /sys   :  files with 0 bytes storage
 After comparison files on /home present actual storage space because they are real files stored on disk. Instead, the files on /proc and /sys don't present actual storage size because they aren't real files stored on disk they are generated live by the kernel from information it already holds in memory (CPU info, running processes hardware state, etc.), related to the system that changes every second. So it's pointless to save this data to disk since it would need constant rewriting and would be outdated the moment it was saved instead the kernel just generates it on demand when read.
 
 ## File Operations
-check : [`journal/01-first-contact.md`](linux-labs-sysadmin/journal/01-first-contact.md)
+check : [`journal/01-first-contact.md`](../journal/01-first-contact.md)
 
 # File & Directory Operations — Command Reference
 

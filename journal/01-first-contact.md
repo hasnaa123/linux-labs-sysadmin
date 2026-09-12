@@ -16,7 +16,7 @@ practice/
 └── archive/
 
 ```
-![Build Structure][(assets/build-structure.png)]
+![Build Structure](assets/build-structure.png)
 
  ### 2\. Populate and Edit
 
@@ -28,7 +28,8 @@ practice/
 
  **Vim (and Vi):** A powerful, highly efficient terminal editor. It operates using distinct operating modes.
 
-![Text editing][(assets/text_editing.png)]
+![Text editing](assets/text_editing.png)
+
  ### 3\. Rename
 
  Rename `projectB` → `projectB-old` without losing its contents.
